@@ -1,0 +1,175 @@
+{
+  "bio": {
+    "name": "Andrianay Miarintsoa Orlando",
+    "title": "Stagiaire AI Engineer",
+    "email": "andrianayorllando@gmail.com",
+    "phone": "+261 32 74 373 24",
+    "address": "Lot II T 105 B, Antananarivo, Madagascar",
+    "linkedin": "https://www.linkedin.com/in/miarintsoa-orlando-andrianay-621553252/",
+    "github": "https://github.com/Orlando0309",
+    "shortBio": "Développeur passionné par l'IA, spécialisé dans la conception, l'entraînement et le déploiement de modèles ML/DL. Expert en intégration de l'IA dans les systèmes applicatifs avec 2 ans d'expérience pro.",
+    "heroMessage": "Hi, I'm Orlando — I build intelligent systems powered by AI"
+  },
+  "skills": [
+    "Python",
+    "Django",
+    "React",
+    "LangChain",
+    "FastAPI",
+    "JWT",
+    "SQL/NoSQL",
+    "Docker",
+    "Pandas",
+    "Scikit-learn",
+    "Prisma",
+    "PostgreSQL",
+    "Git"
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "title": "Développeur Consultant",
+      "company": "ICP Conseil France",
+      "period": "Sep 2024 - Apr 2025",
+      "description": "Web scraping, data collection",
+      "technologies": ["Python", "Web Scraping", "Data Collection"]
+    },
+    {
+      "id": 2,
+      "title": "FullStack JS Developer",
+      "company": "Only Travaux, France",
+      "period": "May 2024 - Jul 2024",
+      "description": "Refactor and optimize back-end (TypeScript)",
+      "technologies": ["TypeScript", "Node.js", "API Optimization"]
+    },
+    {
+      "id": 3,
+      "title": "React/Python Developer",
+      "company": "Hoag Target",
+      "period": "Sep 2023 - Apr 2024",
+      "description": "Facial recognition for attendance with Django + React, DB management with Prisma/PostgreSQL",
+      "technologies": ["Django", "React", "Prisma", "PostgreSQL", "Facial Recognition"]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "Master II",
+      "institution": "ESTIA Biarritz",
+      "period": "2024–2025",
+      "focus": "Machine Learning, Big Data, RAG System"
+    },
+    {
+      "id": 2,
+      "degree": "Licence",
+      "institution": "IT University",
+      "period": "2020–2023",
+      "focus": "Data analysis, ML basics, optimization algorithms"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "iResume",
+      "description": "CV generator with Gemini + LangGraph",
+      "stack": ["Python", "React", "FastAPI", "JWT", "Gemini", "LangChain"],
+      "link": "https://github.com/Orlando0309/resume-maker-api",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "Bible Bot",
+      "description": "AI agent for generating biblical commentary using RAG",
+      "stack": ["LangChain", "Python", "Fine-tuning"],
+      "link": "https://github.com/Orlando0309/bible-commentary-bot",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Wiki Country",
+      "description": "Wikipedia data scraping and analysis for countries",
+      "stack": ["Python", "Web scraping", "Text processing"],
+      "link": "https://github.com/Orlando0309/wiki-country",
+      "featured": false
+    }
+  ],
+  "techStack": [
+    {
+      "name": "Python",
+      "category": "Languages",
+      "icon": "🐍"
+    },
+    {
+      "name": "React",
+      "category": "Frontend",
+      "icon": "⚛️"
+    },
+    {
+      "name": "Django",
+      "category": "Backend",
+      "icon": "🎸"
+    },
+    {
+      "name": "LangChain",
+      "category": "AI/ML",
+      "icon": "🦜"
+    },
+    {
+      "name": "Docker",
+      "category": "DevOps",
+      "icon": "🐳"
+    },
+    {
+      "name": "Prisma",
+      "category": "Database",
+      "icon": "🔷"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Database",
+      "icon": "🐘"
+    },
+    {
+      "name": "FastAPI",
+      "category": "Backend",
+      "icon": "⚡"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Jean Dupont",
+      "role": "Senior Developer",
+      "company": "Tech Solutions",
+      "content": "Orlando is an exceptional AI engineer. His ability to integrate complex machine learning models into production systems is remarkable.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 2,
+      "name": "Marie Martin",
+      "role": "Project Manager",
+      "company": "Innovation Lab",
+      "content": "Working with Orlando was a pleasure. His technical expertise in AI and clean code practices made our project a huge success.",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b2ac?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 3,
+      "name": "Alex Chen",
+      "role": "CTO",
+      "company": "StartupX",
+      "content": "Orlando's innovative approach to AI solutions and his ability to deliver complex projects on time makes him an invaluable team member.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    }
+  ],
+  "contact": {
+    "email": "andrianayorllando@gmail.com",
+    "phone": "+261 32 74 373 24",
+    "location": "Lot II T 105 B, Antananarivo, Madagascar",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/miarintsoa-orlando-andrianay-621553252/",
+      "github": "https://github.com/Orlando0309",
+      "twitter": "#",
+      "instagram": "#"
+    }
+  }
+} 

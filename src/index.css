@@ -1,0 +1,308 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', 'Space Mono', system-ui, monospace, sans-serif;
+  }
+  
+  body {
+    @apply bg-neo-black text-neo-white overflow-x-hidden font-sans;
+    background: #000000;
+    cursor: none;
+    font-weight: 400;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #a259ff #000000;
+  }
+
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply bg-neo-black border-4 border-neo-purple;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply bg-neo-purple border-2 border-neo-white;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    @apply bg-neo-white;
+  }
+
+  /* Typography overrides */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  code, pre {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .neo-card {
+    @apply bg-neo-white text-neo-black border-8 border-neo-black p-6 relative;
+  }
+
+  .neo-card-inverted {
+    @apply bg-neo-black text-neo-white border-8 border-neo-purple p-6 relative;
+  }
+
+  .neo-button {
+    @apply bg-neo-purple text-neo-white font-bold text-lg px-8 py-4 
+           border-4 border-neo-black hover:bg-neo-white hover:text-neo-black 
+           transition-colors duration-200 font-mono uppercase tracking-wider
+           transform hover:scale-105 active:scale-95;
+  }
+
+  .neo-button-secondary {
+    @apply bg-neo-white text-neo-black font-bold text-lg px-8 py-4 
+           border-4 border-neo-black hover:bg-neo-purple hover:text-neo-white 
+           transition-colors duration-200 font-mono uppercase tracking-wider
+           transform hover:scale-105 active:scale-95;
+  }
+
+  .neo-terminal {
+    @apply bg-neo-black text-neo-white border-4 border-neo-purple p-6 font-mono;
+  }
+
+  .neo-header {
+    @apply font-black font-mono text-neo-black uppercase tracking-wider;
+  }
+
+  .neo-text {
+    @apply font-mono text-neo-black leading-relaxed;
+  }
+
+  .section-container {
+    @apply min-h-screen flex items-center justify-center px-4 py-20 bg-neo-black;
+  }
+
+  .custom-cursor {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    background: #a259ff;
+    border: 4px solid #000000;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+    box-shadow: none;
+  }
+
+  .custom-cursor::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .custom-cursor::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #a259ff;
+    top: -10px;
+    left: -10px;
+    animation: neo-cursor-pulse 2s infinite;
+  }
+
+  /* Grid pattern utilities */
+  .grid-bg {
+    background-image: 
+      linear-gradient(rgba(162, 89, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(162, 89, 255, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Geometric decorations */
+  .corner-decoration {
+    @apply absolute w-8 h-8 bg-neo-purple border-2 border-neo-black;
+  }
+
+  .corner-decoration.top-left {
+    @apply -top-2 -left-2;
+  }
+
+  .corner-decoration.top-right {
+    @apply -top-2 -right-2;
+  }
+
+  .corner-decoration.bottom-left {
+    @apply -bottom-2 -left-2;
+  }
+
+  .corner-decoration.bottom-right {
+    @apply -bottom-2 -right-2;
+  }
+}
+
+@layer utilities {
+  .text-neo-shadow {
+    text-shadow: 4px 4px 0px #000000;
+  }
+
+  .neo-hover {
+    transition: all 0.2s ease;
+  }
+
+  .neo-hover:hover {
+    transform: scale(1.05) rotate(1deg);
+  }
+
+  .neo-border {
+    @apply border-4 border-neo-black;
+  }
+
+  .neo-border-purple {
+    @apply border-4 border-neo-purple;
+  }
+
+  .brutalist-text {
+    @apply font-black font-mono uppercase tracking-wider;
+  }
+
+  .command-text {
+    @apply font-mono text-sm;
+  }
+
+  .status-text {
+    @apply font-mono text-xs uppercase tracking-widest;
+  }
+}
+
+/* Custom animations */
+@keyframes neo-cursor-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes neo-slide-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes neo-scale {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes neo-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes neo-bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes geometric-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-30px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(-15px) rotate(240deg);
+  }
+}
+
+/* Responsive font scaling */
+@media (max-width: 768px) {
+  .neo-header {
+    @apply text-2xl;
+  }
+  
+  .neo-button, .neo-button-secondary {
+    @apply text-base px-6 py-3;
+  }
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 4px solid #a259ff;
+  outline-offset: 4px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --neo-purple: #0000ff;
+    --neo-black: #000000;
+    --neo-white: #ffffff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,23 @@
+🚀 NEW MESSAGE FROM PORTFOLIO CONTACT FORM
+═══════════════════════════════════════════
+
+📧 FROM: {{from_name}} <{{from_email}}>
+📋 SUBJECT: {{subject}}
+📅 RECEIVED: {{sent_date}} at {{sent_time}}
+
+💬 MESSAGE:
+───────────────────────────────────────────
+{{message}}
+───────────────────────────────────────────
+
+🎯 QUICK ACTIONS:
+- Reply to: {{from_email}}
+- Subject: Re: {{subject}}
+
+🔧 SYSTEM INFO:
+- Sent via: Portfolio Contact Form
+- Delivered to: {{to_email}}
+- Powered by: EmailJS
+
+═══════════════════════════════════════════
+This is an automated message from your portfolio website. 
