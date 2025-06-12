@@ -100,6 +100,22 @@
       "icon": "🐍"
     },
     {
+      "name": "JavaScript",
+      "category": "Languages",
+      "icon": "🌐"
+    },
+    {
+      "name": "TypeScript",
+      "category": "Languages",
+      "icon": "🌐"
+    },
+    {
+      "name": "Java",
+      "category": "Languages",
+      "icon": "🍵"
+    },
+
+    {
       "name": "React",
       "category": "Frontend",
       "icon": "⚛️"
@@ -115,6 +131,26 @@
       "icon": "🦜"
     },
     {
+      "name": "LangGraph",
+      "category": "AI/ML",
+      "icon": "🔥"
+    },
+    {
+      "name": "CrewAI",
+      "category": "AI/ML",
+      "icon": "🤖"
+    },
+    {
+      "name": "Gemini",
+      "category": "AI/ML",
+      "icon": "🔥"
+    },
+    {
+      "name":"Prompt Engineering",
+      "category": "AI/ML",
+      "icon": "💬"
+    },
+    {
       "name": "Docker",
       "category": "DevOps",
       "icon": "🐳"
@@ -128,6 +164,26 @@
       "name": "PostgreSQL",
       "category": "Database",
       "icon": "🐘"
+    },
+    {
+      "name": "MongoDB",
+      "category": "Database",
+      "icon": "🍃"
+    },
+    {
+      "name": "MySQL",
+      "category": "Database",
+      "icon": "🐬"
+    },
+    {
+      "name": "SQLite",
+      "category": "Database",
+      "icon": "🍃"
+    },
+    {
+      "name": "Qdrant",
+      "category": "Database",
+      "icon": "🔥"
     },
     {
       "name": "FastAPI",
