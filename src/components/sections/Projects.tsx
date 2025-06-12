@@ -11,6 +11,7 @@ interface ProjectsProps {
       stack: string[]
       link: string
       featured: boolean
+      status: string
     }>
   }
 }
@@ -166,8 +167,8 @@ const Projects = ({ content }: ProjectsProps) => {
                   </div>
 
                   {/* Status indicator */}
-                  <div className="absolute bottom-2 left-2 bg-neo-black text-neo-white px-3 py-1 font-mono text-xs font-bold border-2 border-neo-purple">
-                    STATUS: PRODUCTION
+                  <div className="absolute bottom-2 mt-3 left-2 bg-neo-black text-neo-white px-3 py-1 font-mono text-xs font-bold border-2 border-neo-purple">
+                    STATUS: {project.status}
                   </div>
                 </div>
               </ParallaxElement>
@@ -266,7 +267,7 @@ const Projects = ({ content }: ProjectsProps) => {
 
                       {/* Mini status */}
                       <div className="absolute bottom-1 right-1 bg-neo-purple text-neo-white px-2 py-1 font-mono text-xs font-bold border border-neo-white">
-                        ACTIVE
+                        {project.status}
                       </div>
                     </div>
                   </ParallaxElement>

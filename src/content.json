@@ -36,12 +36,38 @@
     "COMPUTER_VISION", 
     "NLP",
     "API_DEV",
-    "DATABASE_DESIGN"
+    "DATABASE_DESIGN",
+    "MCP",
+    "CrewAI"
   ],
   "competencies": [
     {
       "title": "AI/ML MODEL DEVELOPMENT",
       "description": "Building intelligent systems with modern AI frameworks"
+    },
+    {
+      "title": "RAG SYSTEM",
+      "description": "Building RAG systems with LangChain, LangGraph, CrewAI"
+    },
+    {
+      "title": "NLP",
+      "description": "Building NLP models with PyTorch"
+    },
+    {
+      "title": "API_DEV",
+      "description": "Building API"
+    },
+    {
+      "title": "DATABASE_DESIGN",
+      "description": "Building database design"
+    },
+    {
+      "title":"MCP",
+      "description": "Building MCP Server"
+    },
+    {
+      "title":"CrewAI",
+      "description": "Building AI System using CrewAI"
     },
     {
       "title": "FULL-STACK WEB DEV", 
@@ -58,12 +84,22 @@
   ],
   "experience": [
     {
+      "id": 0,
+      "title": "Stagiaire AI Engineer",
+      "company": "Constellation Group",
+      "period": "Jun 2025 - Present",
+      "description": "AI Engineer",
+      "technologies": ["Python", "LangChain", "LangGraph", "CrewAI", "Gemini", "Prompt Engineering"],
+      "status": "IN_PROGRESS"
+    },
+    {
       "id": 1,
       "title": "Développeur Consultant",
       "company": "ICP Conseil France",
       "period": "Sep 2024 - Apr 2025",
       "description": "Web scraping, data collection",
-      "technologies": ["Python", "Web Scraping", "Data Collection"]
+      "technologies": ["Python", "Web Scraping", "Data Collection"],
+      "status": "IN_PROGRESS"
     },
     {
       "id": 2,
@@ -71,7 +107,8 @@
       "company": "Only Travaux, France",
       "period": "May 2024 - Jul 2024",
       "description": "Refactor and optimize back-end (TypeScript)",
-      "technologies": ["TypeScript", "Node.js", "API Optimization"]
+      "technologies": ["TypeScript", "Node.js", "API Optimization"],
+      "status": "COMPLETED"
     },
     {
       "id": 3,
@@ -79,7 +116,8 @@
       "company": "Hoag Target",
       "period": "Sep 2023 - Apr 2024",
       "description": "Facial recognition for attendance with Django + React, DB management with Prisma/PostgreSQL",
-      "technologies": ["Django", "React", "Prisma", "PostgreSQL", "Facial Recognition"]
+      "technologies": ["Django", "React", "Prisma", "PostgreSQL", "Facial Recognition"],
+      "status": "COMPLETED"
     }
   ],
   "education": [
@@ -105,7 +143,8 @@
       "description": "CV generator with Gemini + LangGraph",
       "stack": ["Python", "React", "FastAPI", "JWT", "Gemini", "LangChain"],
       "link": "https://github.com/Orlando0309/resume-maker-api",
-      "featured": true
+      "featured": true,
+      "status": "PRODUCTION"
     },
     {
       "id": 2,
@@ -113,7 +152,8 @@
       "description": "AI agent for generating biblical commentary using RAG",
       "stack": ["LangChain", "Python", "Fine-tuning"],
       "link": "https://github.com/Orlando0309/bible-commentary-bot",
-      "featured": true
+      "featured": true,
+      "status": "BETA"
     },
     {
       "id": 3,
@@ -121,7 +161,8 @@
       "description": "Wikipedia data scraping and analysis for countries",
       "stack": ["Python", "Web scraping", "Text processing"],
       "link": "https://github.com/Orlando0309/wiki-country",
-      "featured": false
+      "featured": false,
+      "status": "ACTIVE"
     }
   ],
   "techStack": [

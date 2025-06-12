@@ -11,6 +11,7 @@ interface ExperienceProps {
       period: string
       description: string
       technologies: string[]
+      status: string
     }>
   }
 }
@@ -156,7 +157,7 @@ const Experience = ({ content }: ExperienceProps) => {
 
                       {/* Status indicator */}
                       <div className={`absolute bottom-2 left-2 ${index % 2 === 0 ? 'bg-neo-black text-neo-white' : 'bg-neo-white text-neo-black'} px-3 py-1 font-mono text-xs font-bold border-2 border-current`}>
-                        STATUS: COMPLETED
+                        STATUS: {exp.status}
                       </div>
                     </div>
                   </div>
