@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Calendar, Building, ArrowRight, Terminal, Clock, FileText } from 'lucide-react'
+import { Building, ArrowRight, Terminal, Clock, FileText } from 'lucide-react'
 import ParallaxElement from '../ParallaxElement'
 
 interface ExperienceProps {
