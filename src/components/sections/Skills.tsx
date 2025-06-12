@@ -5,6 +5,11 @@ import ParallaxElement from '../ParallaxElement'
 interface SkillsProps {
   content: {
     skills: string[]
+    techStack: Array<{
+      name: string
+      category: string
+      icon: string
+    }>
   }
 }
 
@@ -37,40 +42,30 @@ const Skills = ({ content }: SkillsProps) => {
     }
   }
 
-  const skillCategories = {
-    "LANGUAGES": {
-      skills: ["Python", "JavaScript", "TypeScript"],
-      icon: Terminal,
-      color: "bg-neo-purple"
-    },
-    "FRAMEWORKS": {
-      skills: ["Django", "React", "FastAPI"],
-      icon: Code,
-      color: "bg-neo-white"
-    },
-    "AI_ML": {
-      skills: ["LangChain", "Scikit-learn", "Pandas"],
-      icon: Brain,
-      color: "bg-neo-purple"
-    },
-    "DATABASES": {
-      skills: ["PostgreSQL", "SQL/NoSQL", "Prisma"],
-      icon: Database,
-      color: "bg-neo-white"
-    },
-    "TOOLS": {
-      skills: ["Docker", "Git", "JWT"],
-      icon: Cpu,
-      color: "bg-neo-purple"
+  // Group techStack by category
+  const groupedTechStack = content.techStack.reduce((acc, tech) => {
+    const category = tech.category.toUpperCase()
+    if (!acc[category]) {
+      acc[category] = []
     }
+    acc[category].push(tech)
+    return acc
+  }, {} as Record<string, typeof content.techStack>)
+
+  // Define category configurations
+  const categoryConfigs = {
+    "LANGUAGES": { icon: Terminal, color: "bg-neo-purple" },
+    "FRONTEND": { icon: Code, color: "bg-neo-white" },
+    "BACKEND": { icon: Code, color: "bg-neo-purple" },
+    "AI/ML": { icon: Brain, color: "bg-neo-white" },
+    "DATABASE": { icon: Database, color: "bg-neo-purple" },
+    "DEVOPS": { icon: Cpu, color: "bg-neo-white" }
   }
 
-  const getSkillsForCategory = (categorySkills: string[]) => {
-    return content.skills.filter(skill => categorySkills.includes(skill))
-  }
-
+  // Get remaining skills that are not in techStack
+  const techStackNames = content.techStack.map(tech => tech.name)
   const remainingSkills = content.skills.filter(skill => 
-    !Object.values(skillCategories).flatMap(cat => cat.skills).includes(skill)
+    !techStackNames.includes(skill)
   )
 
   return (
@@ -108,10 +103,11 @@ const Skills = ({ content }: SkillsProps) => {
         >
           {/* Skill Categories Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {Object.entries(skillCategories).map(([category, config], index) => {
-              const categorySkills = getSkillsForCategory(config.skills)
-              if (categorySkills.length === 0) return null
+            {Object.entries(groupedTechStack).map(([category, techs], index) => {
+              if (techs.length === 0) return null
 
+              const config = categoryConfigs[category as keyof typeof categoryConfigs] || 
+                           { icon: Terminal, color: "bg-neo-purple" }
               const IconComponent = config.icon
               const isWhiteBg = config.color === "bg-neo-white"
 
@@ -135,16 +131,19 @@ const Skills = ({ content }: SkillsProps) => {
                       </div>
 
                       <div className="space-y-3">
-                        {categorySkills.map((skill, skillIndex) => (
+                        {techs.map((tech, techIndex) => (
                           <motion.div
-                            key={skill}
+                            key={tech.name}
                             className={`p-3 border-4 border-neo-black ${isWhiteBg ? 'bg-neo-black text-neo-white' : 'bg-neo-white text-neo-black'} font-mono font-bold`}
-                            whileHover={{ scale: 1.05, rotate: skillIndex % 2 === 0 ? 1 : -1 }}
+                            whileHover={{ scale: 1.05, rotate: techIndex % 2 === 0 ? 1 : -1 }}
                             transition={{ duration: 0.2 }}
                           >
                             <div className="flex items-center justify-between">
-                              <span className="uppercase tracking-wide">{skill}</span>
-                              <div className={`w-3 h-3 ${isWhiteBg ? 'bg-neo-purple' : 'bg-neo-purple'} border-2 border-current`}></div>
+                              <span className="uppercase tracking-wide">{tech.name}</span>
+                              <div className="flex items-center gap-2">
+                                <span className="text-lg">{tech.icon}</span>
+                                <div className={`w-3 h-3 ${isWhiteBg ? 'bg-neo-purple' : 'bg-neo-purple'} border-2 border-current`}></div>
+                              </div>
                             </div>
                           </motion.div>
                         ))}
@@ -152,7 +151,7 @@ const Skills = ({ content }: SkillsProps) => {
 
                       {/* Status indicator */}
                       <div className={`absolute bottom-2 right-2 ${isWhiteBg ? 'bg-neo-black text-neo-white' : 'bg-neo-white text-neo-black'} px-2 py-1 font-mono text-xs font-bold border-2 border-current`}>
-                        {categorySkills.length}_LOADED
+                        {techs.length}_LOADED
                       </div>
                     </div>
                   </ParallaxElement>

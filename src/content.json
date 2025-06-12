@@ -25,6 +25,37 @@
     "PostgreSQL",
     "Git"
   ],
+  "stats": {
+    "yearsExperience": "2+",
+    "projectsCompleted": "10+",
+    "clientsSatisfied": "15+",
+    "technologiesMastered": "20+"
+  },
+  "specialties": [
+    "RAG_SYSTEMS",
+    "COMPUTER_VISION", 
+    "NLP",
+    "API_DEV",
+    "DATABASE_DESIGN"
+  ],
+  "competencies": [
+    {
+      "title": "AI/ML MODEL DEVELOPMENT",
+      "description": "Building intelligent systems with modern AI frameworks"
+    },
+    {
+      "title": "FULL-STACK WEB DEV", 
+      "description": "End-to-end web application development"
+    },
+    {
+      "title": "DATA ANALYSIS & VIZ",
+      "description": "Extracting insights from complex datasets"
+    },
+    {
+      "title": "SYSTEM INTEGRATION",
+      "description": "Seamlessly connecting AI models with existing systems"
+    }
+  ],
   "experience": [
     {
       "id": 1,

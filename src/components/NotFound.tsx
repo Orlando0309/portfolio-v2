@@ -186,12 +186,12 @@ const NotFound = () => {
                 <Terminal className="w-6 h-6 text-neo-purple stroke-[3]" />
                 <span className="text-neo-purple font-bold">SYSTEM@AI_PORTFOLIO:~$</span>
               </div>
-                             <div className="space-y-2 text-sm">
-                 <div>&gt; PAGE_NOT_FOUND</div>
-                 <div>&gt; NEURAL_NETWORK_CONFUSED</div>
-                 <div>&gt; REDIRECTING_TO_SAFE_ZONE...</div>
-                 <div className="text-red-400">&gt; ERROR: PATH_INVALID</div>
-               </div>
+              <div className="space-y-2 text-sm">
+                <div>&gt; PAGE_NOT_FOUND</div>
+                <div>&gt; NEURAL_NETWORK_CONFUSED</div>
+                <div>&gt; REDIRECTING_TO_SAFE_ZONE...</div>
+                <div className="text-red-400">&gt; ERROR: PATH_INVALID</div>
+              </div>
             </motion.div>
 
             {/* Action buttons */}

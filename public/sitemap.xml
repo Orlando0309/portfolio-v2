@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-vercel-app.vercel.app/</loc>
+    <loc>https://orlando-portfolio.vercel.app/</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://your-vercel-app.vercel.app/#about</loc>
+    <loc>https://orlando-portfolio.vercel.app/#about</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://your-vercel-app.vercel.app/#skills</loc>
+    <loc>https://orlando-portfolio.vercel.app/#skills</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://your-vercel-app.vercel.app/#experience</loc>
+    <loc>https://orlando-portfolio.vercel.app/#experience</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://your-vercel-app.vercel.app/#projects</loc>
+    <loc>https://orlando-portfolio.vercel.app/#projects</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://your-vercel-app.vercel.app/#testimonials</loc>
+    <loc>https://orlando-portfolio.vercel.app/#testimonials</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://your-vercel-app.vercel.app/#contact</loc>
+    <loc>https://orlando-portfolio.vercel.app/#contact</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

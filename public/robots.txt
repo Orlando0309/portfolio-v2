@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://your-vercel-app.vercel.app/sitemap.xml
+Sitemap: https://orlando-portfolio.vercel.app/sitemap.xml
 
 # Disallow email templates (if you want to keep them private)
 Disallow: /email-template-example.html

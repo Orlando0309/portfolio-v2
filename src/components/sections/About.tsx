@@ -14,6 +14,17 @@ interface AboutProps {
       github: string
       shortBio: string
     }
+    stats: {
+      yearsExperience: string
+      projectsCompleted: string
+      clientsSatisfied: string
+      technologiesMastered: string
+    }
+    specialties: string[]
+    competencies: Array<{
+      title: string
+      description: string
+    }>
   }
 }
 
@@ -140,7 +151,7 @@ const About = ({ content }: AboutProps) => {
                   className="bg-neo-purple text-neo-white border-4 border-neo-black p-6 text-center relative"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="text-4xl font-black font-mono mb-2">2+</div>
+                  <div className="text-4xl font-black font-mono mb-2">{content.stats.yearsExperience}</div>
                   <div className="font-mono font-bold uppercase text-sm tracking-wider">YEARS EXP</div>
                   <div className="absolute top-2 right-2 w-4 h-4 bg-neo-white border-2 border-neo-black"></div>
                 </motion.div>
@@ -148,7 +159,7 @@ const About = ({ content }: AboutProps) => {
                   className="bg-neo-white text-neo-black border-4 border-neo-black p-6 text-center relative"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="text-4xl font-black font-mono mb-2 text-neo-purple">10+</div>
+                  <div className="text-4xl font-black font-mono mb-2 text-neo-purple">{content.stats.projectsCompleted}</div>
                   <div className="font-mono font-bold uppercase text-sm tracking-wider">PROJECTS</div>
                   <div className="absolute top-2 right-2 w-4 h-4 bg-neo-purple border-2 border-neo-black"></div>
                 </motion.div>
@@ -163,22 +174,12 @@ const About = ({ content }: AboutProps) => {
                   <h3 className="text-2xl font-black font-mono text-neo-black uppercase">WHAT_I_DO</h3>
                 </div>
                 <ul className="space-y-4 text-neo-black font-mono">
-                  <li className="flex items-center gap-3 p-2 bg-neo-gray border-2 border-neo-black">
-                    <div className="w-4 h-4 bg-neo-purple border-2 border-neo-black" />
-                    AI/ML MODEL DEVELOPMENT
-                  </li>
-                  <li className="flex items-center gap-3 p-2 bg-neo-gray border-2 border-neo-black">
-                    <div className="w-4 h-4 bg-neo-purple border-2 border-neo-black" />
-                    FULL-STACK WEB DEV
-                  </li>
-                  <li className="flex items-center gap-3 p-2 bg-neo-gray border-2 border-neo-black">
-                    <div className="w-4 h-4 bg-neo-purple border-2 border-neo-black" />
-                    DATA ANALYSIS & VIZ
-                  </li>
-                  <li className="flex items-center gap-3 p-2 bg-neo-gray border-2 border-neo-black">
-                    <div className="w-4 h-4 bg-neo-purple border-2 border-neo-black" />
-                    SYSTEM INTEGRATION
-                  </li>
+                  {content.competencies.map((competency, index) => (
+                    <li key={index} className="flex items-center gap-3 p-2 bg-neo-gray border-2 border-neo-black">
+                      <div className="w-4 h-4 bg-neo-purple border-2 border-neo-black" />
+                      {competency.title}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </ParallaxElement>
@@ -191,7 +192,7 @@ const About = ({ content }: AboutProps) => {
                   <h3 className="text-2xl font-black font-mono text-neo-white uppercase">SPECIALTIES</h3>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
-                  {['RAG_SYSTEMS', 'COMPUTER_VISION', 'NLP', 'API_DEV', 'DATABASE_DESIGN'].map((specialty, index) => (
+                  {content.specialties.map((specialty, index) => (
                     <motion.span
                       key={index}
                       className="px-4 py-2 bg-neo-purple text-neo-white border-2 border-neo-white text-sm font-mono font-bold text-center uppercase"
