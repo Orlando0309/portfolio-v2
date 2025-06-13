@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { ChevronDown, Github, Mail, Terminal, Code2 } from 'lucide-react'
-import AIBrain3D from '../AIBrain3D'
+import Avatar3D from '../Avatar3D'
 import GeometricShapes from '../GeometricShapes'
 import ParallaxElement from '../ParallaxElement'
 
@@ -141,7 +141,7 @@ const Hero = ({ content }: HeroProps) => {
           </motion.div>
         </motion.div>
 
-        {/* Right content - 3D Model */}
+        {/* Right content - 3D Avatar */}
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -149,18 +149,18 @@ const Hero = ({ content }: HeroProps) => {
           className="flex justify-center"
         >
           <ParallaxElement speed={0.2}>
-            <div className="bg-neo-white border-8 border-neo-black p-8 max-w-lg w-full relative">
+            <div className="bg-neo-white border-8 border-neo-black p-4 max-w-lg w-full relative">
               {/* Corner decorations */}
               <div className="absolute -top-2 -left-2 w-8 h-8 bg-neo-purple border-2 border-neo-black"></div>
               <div className="absolute -top-2 -right-2 w-8 h-8 bg-neo-purple border-2 border-neo-black"></div>
               <div className="absolute -bottom-2 -left-2 w-8 h-8 bg-neo-purple border-2 border-neo-black"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-neo-purple border-2 border-neo-black"></div>
               
-              <AIBrain3D />
+              <Avatar3D />
               
               {/* Label */}
               <div className="absolute bottom-4 left-4 bg-neo-black text-neo-white px-3 py-1 font-mono text-sm font-bold">
-                AI_NEURAL_NET.exe
+                DIGITAL_AVATAR.exe
               </div>
             </div>
           </ParallaxElement>

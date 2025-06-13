@@ -10,6 +10,10 @@ interface SkillsProps {
       category: string
       icon: string
     }>
+    competencies: Array<{
+      title: string
+      description: string
+    }>
   }
 }
 
@@ -216,50 +220,43 @@ const Skills = ({ content }: SkillsProps) => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <motion.div
-                    className="text-center"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <div className="w-24 h-24 mx-auto mb-4 bg-neo-black border-8 border-neo-purple flex items-center justify-center relative">
-                      <Brain className="w-12 h-12 text-neo-purple stroke-[3]" />
-                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-neo-white border-2 border-neo-black"></div>
-                    </div>
-                    <h4 className="text-xl font-black font-mono mb-2 uppercase">AI/ML_DEV</h4>
-                    <div className="bg-neo-black text-neo-white p-3 border-4 border-neo-purple font-mono text-sm">
-                      BUILDING INTELLIGENT SYSTEMS WITH MODERN AI FRAMEWORKS
-                    </div>
-                  </motion.div>
+                  {content.competencies.slice(0, 3).map((competency, index) => {
+                    // Define icon mapping for different competency types
+                    const getCompetencyIcon = (title: string) => {
+                      const titleLower = title.toLowerCase()
+                      if (titleLower.includes('ai') || titleLower.includes('ml') || titleLower.includes('rag') || titleLower.includes('nlp') || titleLower.includes('crewai') || titleLower.includes('mcp')) {
+                        return Brain
+                      } else if (titleLower.includes('full') || titleLower.includes('web') || titleLower.includes('api')) {
+                        return Code
+                      } else if (titleLower.includes('data') || titleLower.includes('database')) {
+                        return Database
+                      } else {
+                        return Terminal
+                      }
+                    }
 
-                  <motion.div
-                    className="text-center"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <div className="w-24 h-24 mx-auto mb-4 bg-neo-purple border-8 border-neo-black flex items-center justify-center relative">
-                      <Code className="w-12 h-12 text-neo-white stroke-[3]" />
-                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-neo-white border-2 border-neo-black"></div>
-                    </div>
-                    <h4 className="text-xl font-black font-mono mb-2 uppercase">FULL_STACK</h4>
-                    <div className="bg-neo-black text-neo-white p-3 border-4 border-neo-purple font-mono text-sm">
-                      END-TO-END WEB APPLICATION DEVELOPMENT
-                    </div>
-                  </motion.div>
+                    const IconComponent = getCompetencyIcon(competency.title)
+                    const bgColors = ['bg-neo-black', 'bg-neo-purple', 'bg-neo-black']
+                    const iconColors = ['text-neo-purple', 'text-neo-white', 'text-neo-purple']
 
-                  <motion.div
-                    className="text-center"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <div className="w-24 h-24 mx-auto mb-4 bg-neo-black border-8 border-neo-purple flex items-center justify-center relative">
-                      <Database className="w-12 h-12 text-neo-purple stroke-[3]" />
-                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-neo-white border-2 border-neo-black"></div>
-                    </div>
-                    <h4 className="text-xl font-black font-mono mb-2 uppercase">DATA_ANALYSIS</h4>
-                    <div className="bg-neo-black text-neo-white p-3 border-4 border-neo-purple font-mono text-sm">
-                      EXTRACTING INSIGHTS FROM COMPLEX DATASETS
-                    </div>
-                  </motion.div>
+                    return (
+                      <motion.div
+                        key={competency.title}
+                        className="text-center"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <div className={`w-24 h-24 mx-auto mb-4 ${bgColors[index % bgColors.length]} border-8 border-neo-purple flex items-center justify-center relative`}>
+                          <IconComponent className={`w-12 h-12 ${iconColors[index % iconColors.length]} stroke-[3]`} />
+                          <div className="absolute -top-2 -right-2 w-8 h-8 bg-neo-white border-2 border-neo-black"></div>
+                        </div>
+                        <h4 className="text-xl font-black font-mono mb-2 uppercase">{competency.title.replace(/ /g, '_')}</h4>
+                        <div className="bg-neo-black text-neo-white p-3 border-4 border-neo-purple font-mono text-sm">
+                          {competency.description.toUpperCase()}
+                        </div>
+                      </motion.div>
+                    )
+                  })}
                 </div>
               </div>
             </ParallaxElement>
