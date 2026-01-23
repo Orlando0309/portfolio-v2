@@ -1,7 +1,7 @@
 {
   "bio": {
     "name": "Andrianay Miarintsoa Orlando",
-    "title": "Stagiaire AI Engineer",
+    "title": "AI Engineer",
     "email": "andrianayorllando@gmail.com",
     "phone": "+261 32 74 373 24",
     "address": "Lot II T 105 B, Antananarivo, Madagascar",
@@ -85,7 +85,7 @@
   "experience": [
     {
       "id": 0,
-      "title": "Stagiaire AI Engineer",
+      "title": "AI Engineer",
       "company": "Constellation Group",
       "period": "Jun 2025 - Present",
       "description": "AI Engineer",
@@ -94,7 +94,7 @@
     },
     {
       "id": 1,
-      "title": "Développeur Consultant",
+      "title": "Développeur Consultant .NET",
       "company": "ICP Conseil France",
       "period": "Sep 2024 - Apr 2025",
       "description": "Web scraping, data collection",
