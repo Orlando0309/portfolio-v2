@@ -14,6 +14,10 @@
     "Python",
     "Django",
     "React",
+    "Node.js",
+    "ASP.NET Core",
+    "C#",
+    "Intégration IA",
     "LangChain",
     "FastAPI",
     "JWT",
@@ -94,29 +98,38 @@
     },
     {
       "id": 1,
-      "title": "Développeur Consultant .NET",
+      "title": "Consultant .NET",
       "company": "ICP Conseil France",
-      "period": "Sep 2024 - Apr 2025",
-      "description": "Web scraping, data collection",
-      "technologies": ["Python", "Web Scraping", "Data Collection"],
+      "period": "Jan 2026 - Feb 2026",
+      "description": "Réduit de 50 % le temps de traitement des dossiers patients grâce à l’optimisation .NET ; dirigé le déploiement d’un ERP hospitalier en assurant la sécurité ; introduit des tests unitaires et d’intégration avec 80 % de couverture ; intégré des modules IA pour les cabinets médicaux.",
+      "technologies": ["C#", "ASP.NET Core", ".NET", "Unit Testing", "Integration Testing", "AI Integration"],
       "status": "IN_PROGRESS"
     },
     {
       "id": 2,
-      "title": "FullStack JS Developer",
-      "company": "Only Travaux, France",
-      "period": "May 2024 - Jul 2024",
-      "description": "Refactor and optimize back-end (TypeScript)",
-      "technologies": ["TypeScript", "Node.js", "API Optimization"],
+      "title": "Développeur Consultant",
+      "company": "ICP Conseil France",
+      "period": "Sep 2024 - Apr 2025",
+      "description": "Optimisé le code .NET MVC pour améliorer performance et maintenabilité ; développé des scripts de web scraping robustes ; collaboré avec les équipes pour livrer des solutions évolutives.",
+      "technologies": ["C#", ".NET MVC", "Web Scraping", "Performance Optimization"],
       "status": "COMPLETED"
     },
     {
       "id": 3,
-      "title": "React/Python Developer",
+      "title": "Développeur React/Python",
       "company": "Hoag Target",
       "period": "Sep 2023 - Apr 2024",
-      "description": "Facial recognition for attendance with Django + React, DB management with Prisma/PostgreSQL",
-      "technologies": ["Django", "React", "Prisma", "PostgreSQL", "Facial Recognition"],
+      "description": "Conçu des interfaces utilisateur réactives avec React ; intégré des services back-end Python/Django ; mis en place un CMS, un back-office et l’intégration du paiement Orange Money.",
+      "technologies": ["React", "Python", "Django", "CMS", "Back Office", "Orange Money"],
+      "status": "COMPLETED"
+    },
+    {
+      "id": 4,
+      "title": "Développeur FullStack JS",
+      "company": "Only Travaux France",
+      "period": "May 2024 - Apr 2024",
+      "description": "Optimisation et refactorisation du code Back-end (TypeScript) pour améliorer la performance et la maintenabilité.",
+      "technologies": ["TypeScript", "Node.js", "Back-end Optimization"],
       "status": "COMPLETED"
     }
   ],
@@ -163,6 +176,15 @@
       "link": "https://github.com/Orlando0309/wiki-country",
       "featured": false,
       "status": "ACTIVE"
+    },
+    {
+      "id": 4,
+      "name": "Lifeline",
+      "description": "Application de gestion de patients pour les cabinets français, permettant le suivi complet du rendez-vous au traitement.",
+      "stack": [".NET", "C#", "JavaScript"],
+      "link": "#",
+      "featured": true,
+      "status": "PRODUCTION"
     }
   ],
   "techStack": [
@@ -186,7 +208,11 @@
       "category": "Languages",
       "icon": "🍵"
     },
-
+    {
+      "name": "C#",
+      "category": "Languages",
+      "icon": "🔷"
+    },
     {
       "name": "React",
       "category": "Frontend",
@@ -196,6 +222,11 @@
       "name": "Django",
       "category": "Backend",
       "icon": "🎸"
+    },
+    {
+      "name": "ASP.NET Core",
+      "category": "Backend",
+      "icon": "🟣"
     },
     {
       "name": "LangChain",
@@ -266,26 +297,26 @@
   "testimonials": [
     {
       "id": 1,
-      "name": "Jean Dupont",
-      "role": "Senior Developer",
-      "company": "Tech Solutions",
+      "name": "Mamihery Constellation",
+      "role": "Lead Data Scientist",
+      "company": "Constellation Group",
       "content": "Orlando is an exceptional AI engineer. His ability to integrate complex machine learning models into production systems is remarkable.",
       "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
     },
     {
       "id": 2,
-      "name": "Marie Martin",
+      "name": "Denis Peigné",
       "role": "Project Manager",
-      "company": "Innovation Lab",
-      "content": "Working with Orlando was a pleasure. His technical expertise in AI and clean code practices made our project a huge success.",
+      "company": "Only Travaux France",
+      "content": "Working with Orlando was a pleasure. His technical expertise in Node.js and clean code practices made our project a huge success.",
       "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b2ac?w=150&h=150&fit=crop&crop=face"
     },
     {
       "id": 3,
-      "name": "Alex Chen",
-      "role": "CTO",
-      "company": "StartupX",
-      "content": "Orlando's innovative approach to AI solutions and his ability to deliver complex projects on time makes him an invaluable team member.",
+      "name": "Richard Partamian",
+      "role": "CEO",
+      "company": "ICP Conseil France",
+      "content": "Orlando's innovative approach to .NET solutions and his ability to deliver complex projects on time makes him an invaluable team member.",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
     }
   ],
