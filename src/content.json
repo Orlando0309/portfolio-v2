@@ -89,21 +89,21 @@
   "experience": [
     {
       "id": 0,
-      "title": "AI Engineer",
-      "company": "Constellation Group",
-      "period": "Jun 2025 - Present",
-      "description": "AI Engineer",
-      "technologies": ["Python", "LangChain", "LangGraph", "CrewAI", "Gemini", "Prompt Engineering"],
+      "title": "Consultant .NET",
+      "company": "ICP Conseil France",
+      "period": "Jan 2026 - Present",
+      "description": "Réduit de 50 % le temps de traitement des dossiers patients grâce à l’optimisation .NET ; dirigé le déploiement d’un ERP hospitalier en assurant la sécurité ; introduit des tests unitaires et d’intégration avec 80 % de couverture ; intégré des modules IA pour les cabinets médicaux.",
+      "technologies": ["C#", "ASP.NET Core", ".NET", "Unit Testing", "Integration Testing", "AI Integration"],
       "status": "IN_PROGRESS"
     },
     {
       "id": 1,
-      "title": "Consultant .NET",
-      "company": "ICP Conseil France",
-      "period": "Jan 2026 - Feb 2026",
-      "description": "Réduit de 50 % le temps de traitement des dossiers patients grâce à l’optimisation .NET ; dirigé le déploiement d’un ERP hospitalier en assurant la sécurité ; introduit des tests unitaires et d’intégration avec 80 % de couverture ; intégré des modules IA pour les cabinets médicaux.",
-      "technologies": ["C#", "ASP.NET Core", ".NET", "Unit Testing", "Integration Testing", "AI Integration"],
-      "status": "IN_PROGRESS"
+      "title": "AI Engineer",
+      "company": "Constellation Group",
+      "period": "Jun 2025 - Jan 2026",
+      "description": "AI Engineer",
+      "technologies": ["Python", "LangChain", "LangGraph", "CrewAI", "Gemini", "Prompt Engineering"],
+      "status": "COMPLETED"
     },
     {
       "id": 2,
